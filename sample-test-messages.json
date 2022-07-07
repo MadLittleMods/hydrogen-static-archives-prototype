@@ -1,0 +1,43 @@
+{
+  "chunk": [{
+    "event_id": "1",
+    "room_id": "!awef:awef.com",
+    "sender": "@awef:cawef.com",
+    "type": "m.room.message",
+    "content": {
+      "msgtype": "m.text",
+      "body": "aef"
+    },
+    "origin_server_ts": 1655900397876
+  },{
+    "event_id": "2",
+    "room_id": "!awef:awef.com",
+    "sender": "@awef:cawef.com",
+    "type": "m.room.message",
+    "content": {
+      "msgtype": "m.text",
+      "body": "aef"
+    },
+    "origin_server_ts": 1655900397876
+  },{
+    "event_id": "3",
+    "room_id": "!awef:awef.com",
+    "sender": "@awef:cawef.com",
+    "type": "m.room.message",
+    "content": {
+      "msgtype": "m.text",
+      "body": "aef"
+    },
+    "origin_server_ts": 1655900397876
+  },{
+    "event_id": "4",
+    "room_id": "!awef:awef.com",
+    "sender": "@awef:cawef.com",
+    "type": "m.room.message",
+    "content": {
+      "msgtype": "m.text",
+      "body": "aef"
+    },
+    "origin_server_ts": 1655900397876
+  }]
+}

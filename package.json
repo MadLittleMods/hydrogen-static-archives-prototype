@@ -1,0 +1,21 @@
+{
+  "name": "hydrogen-easy-render-test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "linkedom": "^0.14.12"
+  },
+  "devDependencies": {
+    "hydrogen-view-sdk": "^0.0.15"
+  }
+}
