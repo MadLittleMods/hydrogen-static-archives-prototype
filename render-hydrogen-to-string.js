@@ -8,7 +8,6 @@ const crypto = require('crypto');
 const { parseHTML } = require('linkedom');
 
 async function renderToString({ fromTimestamp, roomData, events, stateEventMap }) {
-
   const dom = parseHTML(`
     <!doctype html>
     <html>
@@ -42,9 +41,9 @@ async function renderToString({ fromTimestamp, roomData, events, stateEventMap }
     `
   );
 
-    global.requestAnimationFrame = function (cb) {
-      setTimeout(cb, 0);
-    };
+  global.requestAnimationFrame = function (cb) {
+    setTimeout(cb, 0);
+  };
   //const global = vm.createContext(dom);
   // Make the dom properties available in sub-`require(...)` calls
   global.window = dom.window;
@@ -61,12 +60,8 @@ async function renderToString({ fromTimestamp, roomData, events, stateEventMap }
   // // So we can see logs from the underlying vm
   // global.global.console = console;
 
-
-
-
-
-    const mount = require('./hydrogen-vm-render-script.js');
-    mount();
+  const mount = require('./hydrogen-vm-render-script.js');
+  await mount();
 
   // const hydrogenRenderScriptCode = await readFile(
   //   path.resolve(__dirname, './hydrogen-vm-render-script.js'),
